@@ -5,9 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCTV-Request</title>
+    <title>Meeting Room - SPVI</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        #app-container { width: 100%; height: 100vh; }
+        iframe { border: none; width: 100%; height: 100%; }
+    </style>
 </head>
-<body>
-    <iframe style="width: 100%; height: 100vh;" scrolling="yes" src="https://script.google.com/macros/s/AKfycbz-hRT_NTWG37lnDKFgksyny5x3k_8xL0AhvM0UZkDkigAm1teYph-v2HdSuT8zwaATmg/exec" frameborder="0"></iframe>
+<body oncontextmenu="return false;"> <div id="app-container"></div>
+
+    <script>
+        (function() {
+            var encryptedUrl = "U2FsdGVkX1/ix5oNNKtnx59rDSfjt7U0TTjZpL0s4QV6JNtWHLpA+wxk+yGIH+AXd9aATflb2wOX/h/tlmopNxkkz9b5yTOP6sWyOOzPGcoNT9xrXYvrPe+mnkQ4qcxMKU7v2SHHsVpArbj78ZCr0kQ/yzqpsib1kBBn4LkK7Sev77mTrX1D4Bh8Ot7ocBJw";
+            var container = document.getElementById('app-container');
+            var iframe = document.createElement('iframe');
+            iframe.src = atob(encryptedUrl);
+            iframe.scrolling = "no";
+            iframe.frameBorder = "0";
+            container.appendChild(iframe);
+        })();
+    </script>
+
 </body>
 </html>
