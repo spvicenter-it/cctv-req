@@ -20,7 +20,6 @@
             var container = document.getElementById('app-container');
             var iframe = document.createElement('iframe');
             iframe.src = atob(encryptedUrl);
-            iframe.scrolling = "yes";
             iframe.frameBorder = "0";
             container.appendChild(iframe);
         })();
