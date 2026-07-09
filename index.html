@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <base target="_top">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCTV-Request</title>
-    <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
-        #app-container { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; height: 100dvh; }
-        iframe { border: none; width: 100%; height: 100%; display: block; }
-    </style>
+    <title>ระบบคำร้อง CCTV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body oncontextmenu="return false;"> <div id="app-container"></div>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-4" oncontextmenu="return false;">
 
-    <script>
-        (function() {
-            const encryptedUrl = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3UW5DdTBOR3AtRl9sVEZfdW5MRnhLTEZXNk91MjdxOTlZTk9sbGMxbV9fUUphUWNMUVZEOVJNRHVhQlNFV3ZaTFlQUS9leGVj";
-            const container = document.getElementById('app-container');
-            const iframe = document.createElement('iframe');
-            iframe.src = atob(encryptedUrl);
-            iframe.frameBorder = "0";
-            container.appendChild(iframe);
-        })();
-    </script>
-
+    <div class="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
+        <div class="mb-8">
+            <div class="text-6xl mb-4">📹</div>
+            <h1 class="text-2xl font-bold text-slate-800 mb-2">ระบบคำร้อง CCTV</h1>
+            <p class="text-slate-500 text-sm">เพื่อความเสถียรของระบบและการแสดงผลที่สมบูรณ์ กรุณากดปุ่มด้านล่างเพื่อเปิดระบบในหน้าต่างใหม่</p>
+        </div>
+        
+        <a href="https://script.google.com/macros/s/AKfycbwQnCu0NGp-F_lTF_unLFxKLFW6Ou27q99YNOllc1m__QJaQcLQVD9RMDuaBSEWvZLYPQ/exec" target="_blank" rel="noopener noreferrer" 
+           class="block w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-[1.02]">
+            คลิกเพื่อเข้าสู่ระบบ
+        </a>
+    </div>
 </body>
 </html>
